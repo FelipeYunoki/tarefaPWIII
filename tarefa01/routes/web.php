@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/ola/{nome}', function ($nome) {
+Route::get('/hello/{nome}', function ($nome) {
     return 'Olá, ' . ucfirst($nome) . '! Bem-vindo ao meu site.';
 })->where('nome', '[a-zA-Z]{3,}')->name('hello');
 //==============================================================
