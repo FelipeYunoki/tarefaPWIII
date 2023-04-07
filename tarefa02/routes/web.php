@@ -21,6 +21,6 @@ Route::get('/', function () {
 Route::get('/hello/{nome}', [ArithmeticControllers::class, 'hello'])->where('nome', '[a-zA-Z]{3,}')->name('hello');
 ;
 
-Route::get('/conta/{numero1}/{numero2}/{operacao?}', [ArithmeticControllers::class, 'oprecao']);
+Route::get('/conta/{numero1}/{numero2}/{operacao?}', [ArithmeticControllers::class, 'operacao']);
 
 Route::get('/idade/{ano}/{mes?}/{dia?}', [ArithmeticControllers::class, 'idade']);
